@@ -16,7 +16,7 @@ func TestInit(t *testing.T) {
 		wantErr bool
 	}{
 		{"test1", args{"", "", 1}, true},
-		{"test2", args{"/home/ma1ive/go/src/yanwu.ai/common", "loggg.log", 3}, true},
+		{"test2", args{"/var/log/golog", "logs.log", 3}, true},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
